@@ -1,0 +1,128 @@
+main {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.sidebar,
+main {
+	height: calc(100vh - var(--navbar-height));
+}
+
+.content {
+	display: flex;
+	padding-top: var(--navbar-height);
+	flex-grow: 1;
+}
+
+.sidebar {
+	background-color: var(--bg-sidebar);
+	min-width: 320px;
+	padding-top: 50px;
+	width: 320px;
+}
+
+.sidebar ul li {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar .sidebar-nav > li + li {
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.sidebar .sidebar-nav > li:first-of-type {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	overflow: hidden;
+}
+
+.sidebar ul li a {
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	min-height: 60px;
+	padding: 10px 16px;
+	transition: background-color 0.2s ease;
+	width: 100%;
+}
+
+.sidebar .sidebar-badge {
+	background-color: #99b2c6;
+	border-radius: 14px;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0px auto;
+	padding: 5px 8px;
+}
+
+.sidebar .sidebar-item-dropdown .sidebar-item-dropdown-toggler {
+	height: 32px;
+	transition: transform 0.3s ease;
+	width: 32px;
+}
+
+.sidebar .sidebar-item-dropdown.active > a {
+	background-color: #2da0f9;
+}
+
+.sidebar .sidebar-item-dropdown.active .sidebar-item-dropdown-toggler {
+	transform: rotate(-180deg);
+}
+
+.sidebar .sidebar-nav > li > a:hover {
+	background-color: #2da0f9;
+}
+
+.sidebar .sidebar-nav > .sidebar-item-dropdown.active ~ li a:hover {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.sidebar .sidebar-nav > li > a .sidebar-item-icon {
+	height: 20px;
+	margin-right: 20px;
+	width: 20px;
+}
+
+.sidebar ul li a,
+.sidebar .sidebar-item-icon {
+	color: #fff;
+}
+
+.sidebar .sidebar-dropdown {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+}
+
+.sidebar .sidebar-item-dropdown.active .sidebar-dropdown {
+	max-height: 20vh;
+}
+
+.sidebar .sidebar-dropdown a {
+	background-color: var(--bg-dropdown-secondary);
+	padding-left: 44px;
+}
+
+.sidebar .sidebar-dropdown a::after {
+	background-image: url(../../img/icons/alert.svg);
+	background-position: center;
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 24px;
+	margin-left: auto;
+	width: 24px;
+}
+
+.sidebar .sidebar-dropdown .sidebar-dropdown-item.owns a {
+	background-color: var(--bg-dropdown-primary);
+	font-weight: 500;
+}
+
+.sidebar .sidebar-dropdown .sidebar-dropdown-item.owns a::after {
+	background-image: url(../../img/icons/ok.svg);
+}
+
+.sidebar .sidebar-dropdown .sidebar-item-icon {
+	margin-right: 10px;
+}

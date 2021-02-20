@@ -1,11 +1,15 @@
 :root {
 	--bg-primary: #fff;
 	--bg-secondary: #f0f3f8;
+	--bg-sidebar: #3f4c5b;
+	--bg-dropdown-primary: rgba(162, 201, 230, 0.73);
+	--bg-dropdown-secondary: rgba(111, 146, 177, 0.73);
 	--text-primary: #333333;
 	--text-secondary: #7c7c7c;
 	--text-button: #fff;
 	--color-primary: #0090ff;
 	--color-danger: #ea3a3d;
+	--navbar-height: 65px;
 }
 
 * {
@@ -32,6 +36,17 @@ textarea {
 a,
 button {
 	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 main {
