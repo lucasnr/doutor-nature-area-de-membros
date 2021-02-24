@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="./assets/css/block/sidebar.css" />
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/inside.css" />
+		<link rel="stylesheet" href="./assets/css/block/banner.css" />
 	</head>
 	<body>
 		<nav class="navbar">
@@ -283,90 +284,156 @@
 				</div>
 			</button>
 
-			<div style="padding: 3rem 2rem">
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-				<h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-				<div
-					style="
-						width: 100%;
-						height: 300px;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					"
-				></div>
-			</div>
+			<section id="my-products">
+				<div class="container">
+					<header class="banner">
+						<img
+							src="./assets/img/banner-1.png"
+							alt="Boas vindas"
+							class="banner-background"
+						/>
+
+						<div class="banner-content">
+							<img
+								src="./assets/img/logo-alt.svg"
+								alt="Logomarca Doutor Nature"
+								class="banner-logo"
+							/>
+							<h2 class="banner-title">Seja bem-vindo(a)!</h2>
+							<h3 class="banner-subtitle">
+								Essa é sua Área Exclusiva de assinante!
+							</h3>
+						</div>
+					</header>
+
+					<h2 class="title">Meus Produtos</h2>
+					<div class="products-row">
+						<div class="product">
+							<i class="icon icon-supercerebro"></i>
+							<img
+								class="product-image"
+								src="./assets/img/protocolo-supercerebro.png"
+								alt="Procolo Super Cérebro"
+							/>
+							<h3 class="product-title">Protocolo Super Cérebro</h3>
+							<a href="#0" class="button">Acessar</a>
+						</div>
+
+						<div class="product">
+							<i class="icon icon-bomba-de-imunidade"></i>
+							<img
+								class="product-image"
+								src="./assets/img/protocolo-bomba-de-imunidade.png"
+								alt="Procolo Bomba de Imunidade"
+							/>
+							<h3 class="product-title">Protocolo Bomba de Imunidade</h3>
+							<a href="#0" class="button">Acessar</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="recents">
+				<div class="container">
+					<h2 class="title">Publicações Recentes</h2>
+
+					<ul class="filters">
+						<li class="active">
+							<a href="#liberadas">Publicações Liberadas</a>
+						</li>
+						<li>
+							<a href="#todas">Todas as Publicações</a>
+						</li>
+					</ul>
+
+					<section id="liberadas">
+						<article class="card">
+							<div>
+								<header class="card-header">
+									<i class="icon icon-supercerebro"></i>
+									<h3 class="card-title">
+										Protocolo Super Cérebro | Edição #03
+									</h3>
+								</header>
+								<div class="card-body">
+									<p class="card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Fusce condimentum augue tristique, fermentum leo eu, maximus
+										libero. Proin non condimentum ante, id tristique lorem.
+										Maecenas congue, nibh ac mollis semper, tellus neque
+										pulvinar erat, quis pellentesque nibh felis in purus.
+										Praesent dignissim, odio sit amet lacinia rutrum, sapien
+										lacus suscipit quam, in pretium metus neque ac justo. Aenean
+										ullamcorper nulla vel dolor varius, ut congue nibh
+										venenatis. Vivamus eu lobortis lacus. Curabitur blandit nisl
+										at est iaculis auctor. Aliquam rutrum nibh vel lobortis
+										dignissim. Nam rhoncu.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<img
+										src="./assets/img/icons/calendar.svg"
+										class="card-footer-icon"
+										alt="Ícone calendário"
+									/>
+									<time datetime="2021-02-05" class="card-date">
+										05/02/2021
+									</time>
+								</footer>
+							</div>
+							<a href="#0" class="button">Acessar</a>
+						</article>
+
+						<article class="card">
+							<div>
+								<header class="card-header">
+									<i class="icon icon-bomba-de-imunidade"></i>
+									<h3 class="card-title">
+										Protocolo Bomba de Imunidade | Edição #03
+									</h3>
+								</header>
+								<div class="card-body">
+									<p class="card-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Fusce condimentum augue tristique, fermentum leo eu, maximus
+										libero. Proin non condimentum ante, id tristique lorem.
+										Maecenas congue, nibh ac mollis semper, tellus neque
+										pulvinar erat, quis pellentesque nibh felis in purus.
+										Praesent dignissim, odio sit amet lacinia rutrum, sapien
+										lacus suscipit quam, in pretium metus neque ac justo. Aenean
+										ullamcorper nulla vel dolor varius, ut congue nibh
+										venenatis. Vivamus eu lobortis lacus. Curabitur blandit nisl
+										at est iaculis auctor. Aliquam rutrum nibh vel lobortis
+										dignissim. Nam rhoncu.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<img
+										src="./assets/img/icons/calendar.svg"
+										class="card-footer-icon"
+										alt="Ícone calendário"
+									/>
+									<time datetime="2021-02-05" class="card-date">
+										05/02/2021
+									</time>
+								</footer>
+							</div>
+							<a href="#0" class="button">Acessar</a>
+						</article>
+					</section>
+					<!-- <section id="todas"></section> -->
+				</div>
+			</section>
 		</main>
 
 		<script src="./assets/js/sidebar.js"></script>
+		<script src="./assets/js/filters.js"></script>
+		<script src="./assets/js/clamp.js"></script>
+		<script>
+			const texts = document.querySelectorAll(".card .card-text");
+			texts.forEach((item) => {
+				$clamp(item, { clamp: 4 });
+			});
+		</script>
 	</body>
 </html>

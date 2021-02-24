@@ -4,11 +4,14 @@
 	--bg-sidebar: #3f4c5b;
 	--bg-dropdown-primary: rgba(162, 201, 230, 0.73);
 	--bg-dropdown-secondary: rgba(111, 146, 177, 0.73);
-	--text-primary: #333333;
+	/* --text-primary: #333333; */
+	--text-primary: #010101;
 	--text-secondary: #7c7c7c;
 	--text-button: #fff;
 	--color-primary: #0090ff;
+	--color-secondary: #1a4e62;
 	--color-danger: #ea3a3d;
+	--color-success: #1ad598;
 	--navbar-height: 65px;
 }
 

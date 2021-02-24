@@ -2,3 +2,294 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+.icon {
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	display: block;
+	height: 40px;
+	min-height: 40px;
+	min-width: 40px;
+	width: 40px;
+}
+
+.icon.icon-supercerebro {
+	background-color: var(--color-primary);
+	background-image: url(../img/icons/supercerebro.svg);
+	background-size: 26px;
+}
+
+.icon.icon-bomba-de-imunidade {
+	background-color: var(--color-secondary);
+	background-image: url(../img/icons/bomba-de-imunidade.svg);
+	background-size: 20px;
+}
+
+#my-products {
+	background-color: var(--bg-primary);
+	padding: 16px;
+	padding-bottom: 30px;
+}
+
+.container {
+	margin: 0px auto;
+	max-width: 1326px;
+	width: 100%;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 30px 0px;
+	text-align: center;
+}
+
+.products-row {
+	display: grid;
+	grid-gap: 55px;
+	grid-template-columns: 235px;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.product {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.product .icon {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	transform: translate(50%, -50%);
+}
+
+.product .product-image {
+	border-top-left-radius: 8px;
+	height: 286px;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.product .product-title {
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 26px;
+	margin-top: 18px;
+}
+
+#recents {
+	padding: 30px 10px;
+}
+
+#recents .container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#recents .title {
+	margin: 0px;
+}
+
+.filters {
+	background-color: var(--bg-primary);
+	border-radius: 16px;
+}
+
+#recents .filters {
+	margin: 30px 0px;
+}
+
+.filters,
+.filters li {
+	display: inline-flex;
+}
+
+.filters li a {
+	align-items: center;
+	color: #809fb8;
+	display: flex;
+	font-size: 14px;
+	height: 70px;
+	padding: 0px 15px;
+}
+
+.filters .active a {
+	color: var(--color-primary);
+	font-weight: 700;
+}
+
+.filters li + li {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card {
+	align-items: center;
+	background-color: var(--bg-primary);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: 0px 0px 10px #00000030;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20px 25px 20px;
+	padding: 32px 15px;
+}
+
+.card .card-header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 14px;
+}
+
+.card .icon {
+	transform: scale(1.125);
+	margin-right: 21px;
+}
+
+.card .card-title {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0px;
+	margin-top: 18px;
+	text-align: center;
+}
+
+.card .card-body {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.card .card-text {
+	font-size: 14px;
+	margin: 0px;
+	line-height: 30px;
+}
+
+.card .card-footer {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding-top: 16px;
+}
+
+.card .card-date {
+	font-size: 15px;
+}
+
+.card .card-footer-icon {
+	height: 20px;
+	margin-right: 10px;
+	width: 22px;
+}
+
+.card .button {
+	margin-top: 25px;
+}
+
+@media (min-width: 576px) {
+	#my-products {
+		padding: 30px;
+	}
+
+	.title {
+		font-size: 22px;
+	}
+}
+
+@media (min-width: 768px) {
+	#recents {
+		padding: 30px;
+	}
+
+	.icon {
+		height: 54px;
+		min-height: 54px;
+		min-width: 54px;
+		width: 54px;
+	}
+
+	.icon.icon-supercerebro {
+		background-size: 36px;
+	}
+
+	.icon.icon-bomba-de-imunidade {
+		background-size: 26px;
+	}
+
+	.products-row {
+		grid-template-columns: repeat(auto-fill, 325px);
+		justify-content: start;
+	}
+
+	.product .product-image {
+		height: 395px;
+	}
+
+	.product .product-title {
+		font-size: 18px;
+	}
+
+	.filters li a {
+		font-size: 20px;
+		padding: 0px 35px;
+	}
+
+	.card {
+		padding-left: 47px;
+		padding-right: 47px;
+		margin: 0px;
+		margin-bottom: 40px;
+	}
+
+	.card .card-title {
+		font-size: 22px;
+	}
+
+	.card .card-text,
+	.card .card-date {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	.card {
+		flex-direction: row;
+	}
+
+	.card .card-header {
+		flex-direction: row;
+	}
+
+	.card .icon {
+		transform: scale(0.875);
+	}
+
+	.card .card-title {
+		margin-top: 0px;
+	}
+
+	.card .card-footer {
+		justify-content: flex-start;
+	}
+
+	.card .button {
+		margin-top: 0px;
+		margin-left: 40px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.card .button {
+		margin-left: 85px;
+	}
+}

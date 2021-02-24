@@ -51,6 +51,10 @@ main .form {
 	color: var(--color-danger);
 }
 
+.form .form-message.success {
+	color: var(--color-success);
+}
+
 .form .form-link {
 	color: var(--color-primary);
 }

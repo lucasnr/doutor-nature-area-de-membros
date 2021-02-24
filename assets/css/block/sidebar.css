@@ -51,7 +51,7 @@ main {
 
 #sidebar-toggler {
 	align-items: center;
-	background-color: var(--bg-secondary);
+	background-color: var(--bg-primary);
 	border: none;
 	border-radius: 8px;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.125);
@@ -108,6 +108,11 @@ main {
 
 .sidebar-active #sidebar-toggler {
 	left: calc(var(--sidebar-width) + 24px);
+}
+
+.sidebar,
+#sidebar-toggler {
+	z-index: 999;
 }
 
 .sidebar ul li {
