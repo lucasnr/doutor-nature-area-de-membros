@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/inside.css" />
 		<link rel="stylesheet" href="./assets/css/block/banner.css" />
+		<link rel="stylesheet" href="./assets/css/block/card.css" />
+		<link rel="stylesheet" href="./assets/css/index.css" />
 	</head>
 	<body>
 		<nav class="navbar">
@@ -337,7 +339,7 @@
 				<div class="container">
 					<h2 class="title">Publicações Recentes</h2>
 
-					<ul class="filters">
+					<ul class="tabs">
 						<li class="active">
 							<a href="#liberadas">Publicações Liberadas</a>
 						</li>
@@ -346,88 +348,387 @@
 						</li>
 					</ul>
 
-					<section id="liberadas">
-						<article class="card">
-							<div>
-								<header class="card-header">
-									<i class="icon icon-supercerebro"></i>
-									<h3 class="card-title">
-										Protocolo Super Cérebro | Edição #03
-									</h3>
-								</header>
-								<div class="card-body">
-									<p class="card-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Fusce condimentum augue tristique, fermentum leo eu, maximus
-										libero. Proin non condimentum ante, id tristique lorem.
-										Maecenas congue, nibh ac mollis semper, tellus neque
-										pulvinar erat, quis pellentesque nibh felis in purus.
-										Praesent dignissim, odio sit amet lacinia rutrum, sapien
-										lacus suscipit quam, in pretium metus neque ac justo. Aenean
-										ullamcorper nulla vel dolor varius, ut congue nibh
-										venenatis. Vivamus eu lobortis lacus. Curabitur blandit nisl
-										at est iaculis auctor. Aliquam rutrum nibh vel lobortis
-										dignissim. Nam rhoncu.
-									</p>
+					<div class="tab-content">
+						<section id="liberadas" class="active">
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
 								</div>
-								<footer class="card-footer">
-									<img
-										src="./assets/img/icons/calendar.svg"
-										class="card-footer-icon"
-										alt="Ícone calendário"
-									/>
-									<time datetime="2021-02-05" class="card-date">
-										05/02/2021
-									</time>
-								</footer>
-							</div>
-							<a href="#0" class="button">Acessar</a>
-						</article>
+								<a href="#0" class="button">Acessar</a>
+							</article>
 
-						<article class="card">
-							<div>
-								<header class="card-header">
-									<i class="icon icon-bomba-de-imunidade"></i>
-									<h3 class="card-title">
-										Protocolo Bomba de Imunidade | Edição #03
-									</h3>
-								</header>
-								<div class="card-body">
-									<p class="card-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										Fusce condimentum augue tristique, fermentum leo eu, maximus
-										libero. Proin non condimentum ante, id tristique lorem.
-										Maecenas congue, nibh ac mollis semper, tellus neque
-										pulvinar erat, quis pellentesque nibh felis in purus.
-										Praesent dignissim, odio sit amet lacinia rutrum, sapien
-										lacus suscipit quam, in pretium metus neque ac justo. Aenean
-										ullamcorper nulla vel dolor varius, ut congue nibh
-										venenatis. Vivamus eu lobortis lacus. Curabitur blandit nisl
-										at est iaculis auctor. Aliquam rutrum nibh vel lobortis
-										dignissim. Nam rhoncu.
-									</p>
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
 								</div>
-								<footer class="card-footer">
-									<img
-										src="./assets/img/icons/calendar.svg"
-										class="card-footer-icon"
-										alt="Ícone calendário"
-									/>
-									<time datetime="2021-02-05" class="card-date">
-										05/02/2021
-									</time>
-								</footer>
-							</div>
-							<a href="#0" class="button">Acessar</a>
-						</article>
-					</section>
-					<!-- <section id="todas"></section> -->
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+						</section>
+
+						<section id="todas">
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-bomba-de-imunidade"></i>
+										<h3 class="card-title">
+											Protocolo Bomba de Imunidade | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-bomba-de-imunidade"></i>
+										<h3 class="card-title">
+											Protocolo Bomba de Imunidade | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+
+							<article class="card">
+								<div>
+									<header class="card-header">
+										<i class="icon icon-supercerebro"></i>
+										<h3 class="card-title">
+											Protocolo Super Cérebro | Edição #03
+										</h3>
+									</header>
+									<div class="card-body">
+										<p class="card-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Fusce condimentum augue tristique, fermentum leo eu,
+											maximus libero. Proin non condimentum ante, id tristique
+											lorem. Maecenas congue, nibh ac mollis semper, tellus
+											neque pulvinar erat, quis pellentesque nibh felis in
+											purus. Praesent dignissim, odio sit amet lacinia rutrum,
+											sapien lacus suscipit quam, in pretium metus neque ac
+											justo. Aenean ullamcorper nulla vel dolor varius, ut
+											congue nibh venenatis. Vivamus eu lobortis lacus.
+											Curabitur blandit nisl at est iaculis auctor. Aliquam
+											rutrum nibh vel lobortis dignissim. Nam rhoncu.
+										</p>
+									</div>
+									<footer class="card-footer">
+										<img
+											src="./assets/img/icons/calendar.svg"
+											class="card-footer-icon"
+											alt="Ícone calendário"
+										/>
+										<time datetime="2021-02-05" class="card-date">
+											05/02/2021
+										</time>
+									</footer>
+								</div>
+								<a href="#0" class="button">Acessar</a>
+							</article>
+						</section>
+					</div>
 				</div>
 			</section>
 		</main>
 
 		<script src="./assets/js/sidebar.js"></script>
-		<script src="./assets/js/filters.js"></script>
+		<script src="./assets/js/tabs.js"></script>
 		<script src="./assets/js/clamp.js"></script>
 		<script>
 			const texts = document.querySelectorAll(".card .card-text");
