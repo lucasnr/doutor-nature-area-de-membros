@@ -5,7 +5,7 @@ main {
 
 .sidebar,
 main {
-	--sidebar-width: 275px;
+	--sidebar-width: 17.1875rem;
 	height: 100%;
 }
 
@@ -21,14 +21,14 @@ main {
 	align-items: center;
 	background-color: var(--bg-primary);
 	display: flex;
-	height: 70px;
+	height: 4.375rem;
 	justify-content: center;
-	margin-bottom: 18px;
+	margin-bottom: 1.125rem;
 }
 
 .sidebar .sidebar-logo {
-	height: 20px;
-	width: 170px;
+	height: 1.25rem;
+	width: 10.625rem;
 }
 
 .sidebar .sidebar-navbar {
@@ -37,6 +37,7 @@ main {
 	max-width: var(--sidebar-width);
 	min-width: var(--sidebar-width);
 	overflow-y: scroll;
+	scrollbar-width: none;
 	transform: translateX(calc(var(--sidebar-width) * -1));
 	transition: transform 0.3s ease;
 }
@@ -59,17 +60,17 @@ main {
 	align-items: center;
 	background-color: var(--bg-primary);
 	border: none;
-	border-radius: 8px;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.125);
+	border-radius: 0.5rem;
+	box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.125);
 	display: flex;
-	height: 40px;
+	height: 2.5rem;
 	justify-content: center;
-	left: 28px;
+	left: 1.75rem;
 	position: fixed;
-	top: 44px;
+	top: 2.75rem;
 	transition: background-color 0.3s ease, left 0.3s ease;
 	user-select: none;
-	width: 40px;
+	width: 2.5rem;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -82,10 +83,10 @@ main {
 .burguer-animated::before,
 .burguer-animated::after {
 	background-color: var(--text-primary);
-	border-radius: 99px;
+	border-radius: 80rem;
 	display: block;
-	height: 4px;
-	width: 22px;
+	height: 0.25rem;
+	width: 1.375rem;
 	overflow: visible;
 	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -93,7 +94,7 @@ main {
 .burguer-animated::before,
 .burguer-animated::after {
 	content: "";
-	margin: 4px 0px;
+	margin: 0.25rem 0px;
 }
 
 .sidebar-active .burguer-animated > * {
@@ -101,11 +102,11 @@ main {
 }
 
 .sidebar-active .burguer-animated::before {
-	transform: rotate(45deg) translate(6px, 6px);
+	transform: rotate(45deg) translate(0.375rem, 0.375rem);
 }
 
 .sidebar-active .burguer-animated::after {
-	transform: rotate(-45deg) translate(5px, -5px);
+	transform: rotate(-45deg) translate(0.3125rem, -0.3125rem);
 }
 
 #sidebar-toggler:hover {
@@ -113,7 +114,7 @@ main {
 }
 
 .sidebar-active #sidebar-toggler {
-	left: calc(var(--sidebar-width) + 24px);
+	left: calc(var(--sidebar-width) + 1.5rem);
 }
 
 .sidebar,
@@ -127,29 +128,29 @@ main {
 }
 
 .sidebar .sidebar-nav > li + li {
-	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	border-top: 0.0625rem solid rgba(255, 255, 255, 0.25);
 }
 
 .sidebar .sidebar-nav > li:first-of-type {
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
 	overflow: hidden;
 }
 
 .sidebar ul li a {
 	align-items: center;
 	display: flex;
-	font-size: 16px;
-	min-height: 55px;
-	padding: 10px 16px;
+	font-size: 1rem;
+	min-height: 3.4375rem;
+	padding: 0.625rem 1rem;
 	transition: background-color 0.2s ease;
 	width: 100%;
 }
 
 .sidebar .sidebar-item-dropdown .sidebar-item-dropdown-toggler {
-	height: 26px;
+	height: 1.625rem;
 	transition: transform 0.3s ease;
-	width: 26px;
+	width: 1.625rem;
 }
 
 .sidebar .sidebar-item-dropdown.active > a {
@@ -169,9 +170,9 @@ main {
 }
 
 .sidebar .sidebar-nav > li > a .sidebar-item-icon {
-	height: 16px;
-	margin-right: 16px;
-	width: 16px;
+	height: 1rem;
+	margin-right: 1rem;
+	width: 1rem;
 }
 
 .sidebar ul li a,
@@ -191,11 +192,11 @@ main {
 
 .sidebar .sidebar-dropdown a {
 	background-color: var(--bg-dropdown-secondary);
-	padding-left: 28px;
+	padding-left: 1.75rem;
 }
 
 .sidebar .sidebar-dropdown .sidebar-dropdown-item + .sidebar-dropdown-item a {
-	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	border-top: 0.0625rem solid rgba(0, 0, 0, 0.25);
 }
 
 .sidebar .sidebar-dropdown .sidebar-dropdown-item.active a,
@@ -210,9 +211,9 @@ main {
 	background-size: cover;
 	content: "";
 	display: block;
-	height: 24px;
+	height: 1.5rem;
 	margin-left: auto;
-	width: 24px;
+	width: 1.5rem;
 }
 
 .sidebar .sidebar-dropdown .sidebar-dropdown-item.owns a {
@@ -224,13 +225,13 @@ main {
 }
 
 .sidebar .sidebar-dropdown .sidebar-item-icon {
-	margin-right: 10px;
+	margin-right: 0.625rem;
 }
 
 @media (min-width: 576px) {
 	.sidebar,
 	main {
-		--sidebar-width: 320px;
+		--sidebar-width: 20rem;
 		height: calc(100vh - var(--navbar-height));
 		margin-top: var(--navbar-height);
 	}
@@ -240,36 +241,36 @@ main {
 	}
 
 	.sidebar .sidebar-navbar {
-		padding-top: 50px;
+		padding-top: 3.125rem;
 	}
 
 	#sidebar-toggler {
-		top: calc(var(--navbar-height) + 16px);
+		top: calc(var(--navbar-height) + 1rem);
 	}
 
 	.sidebar-active #sidebar-toggler {
-		left: calc(var(--sidebar-width) + 16px);
+		left: calc(var(--sidebar-width) + 1rem);
 	}
 
 	.sidebar ul li a {
-		font-size: 18px;
-		min-height: 60px;
+		font-size: 1.125rem;
+		min-height: 3.75rem;
 	}
 
 	.sidebar .sidebar-item-dropdown .sidebar-item-dropdown-toggler {
-		height: 32px;
-		width: 32px;
+		height: 2rem;
+		width: 2rem;
 	}
 
 	.sidebar .sidebar-nav > li > a .sidebar-item-icon {
-		height: 20px;
-		margin-right: 20px;
-		width: 20px;
+		height: 1.25rem;
+		margin-right: 1.25rem;
+		width: 1.25rem;
 	}
 
 	.sidebar .sidebar-dropdown a {
 		background-color: var(--bg-dropdown-secondary);
-		padding-left: 44px;
+		padding-left: 2.75rem;
 	}
 }
 

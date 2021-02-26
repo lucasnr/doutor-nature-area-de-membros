@@ -2,49 +2,49 @@ main {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	padding: 25px 15px;
+	padding: 1.5625rem 0.9375rem;
 }
 
 main .form {
 	align-items: center;
 	background-color: var(--bg-primary);
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px #0000000d;
+	border-radius: 0.3125rem;
+	box-shadow: 0px 0px 0.625rem #0000000d;
 	display: flex;
 	flex-direction: column;
-	max-width: 475px;
-	padding: 64px 21px;
+	max-width: 29.6875rem;
+	padding: 4rem 1.3125rem;
 	text-align: center;
 	width: 100%;
 }
 
 .form .form-logo {
-	height: 23px;
-	width: 187px;
+	height: 1.4375rem;
+	width: 11.6875rem;
 }
 
 .form .form-title {
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 700;
 	margin-bottom: 0px;
-	margin-top: 42px;
+	margin-top: 2.625rem;
 }
 
 .form .form-subtitle {
 	color: var(--text-secondary);
 	font-size: 14px;
 	font-weight: 400;
-	margin-bottom: 40px;
-	margin-top: 5px;
+	margin-bottom: 2.5rem;
+	margin-top: 0.3125rem;
 }
 
 .form .input {
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 
 .form .form-message {
 	color: var(--text-secondary);
-	min-height: 17px;
+	min-height: 1.0625rem;
 }
 
 .form .form-message.danger {
@@ -61,43 +61,43 @@ main .form {
 
 .form .form-link,
 .form .form-message {
-	font-size: 13px;
+	font-size: 0.8125rem;
 }
 
 .form .button {
-	margin: 16px 0px;
+	margin: 1rem 0px;
 }
 
 @media (min-width: 576px) {
 	main .form {
-		padding: 60px 42px 48px 42px;
+		padding: 3.75rem 2.625rem 3rem 2.625rem;
 	}
 
 	.form .form-logo {
-		height: 29px;
-		width: 236px;
+		height: 1.8125rem;
+		width: 14.75rem;
 	}
 
 	.form .form-title {
-		font-size: 18px;
-		margin-top: 54px;
+		font-size: 1.125rem;
+		margin-top: 3.375rem;
 	}
 
 	.form .form-subtitle {
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	.form .input {
-		margin-bottom: 20px;
+		margin-bottom: 1.25rem;
 	}
 
 	.form .button {
-		margin-bottom: 22px;
-		margin-top: 18px;
+		margin-bottom: 1.375rem;
+		margin-top: 1.125rem;
 	}
 
 	.form .form-link,
 	.form .form-message {
-		font-size: 15px;
+		font-size: 0.9375rem;
 	}
 }

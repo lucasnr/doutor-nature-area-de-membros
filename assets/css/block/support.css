@@ -1,7 +1,7 @@
 .support-row {
 	display: grid;
-	grid-gap: 64px;
-	margin: 0px -16px;
+	grid-gap: 4rem;
+	margin: 0px -1rem;
 }
 
 .support {
@@ -12,28 +12,28 @@
 }
 
 .support .support-image {
-	height: 202px;
+	height: 12.625rem;
 	object-fit: cover;
 	object-position: center;
 	width: 100%;
 }
 
 .support .support-title {
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 700;
-	margin: 20px 0px;
+	margin: 1.25rem 0px;
 	width: 100%;
 }
 
 .support .support-description {
-	line-height: 30px;
-	margin-bottom: 20px;
+	line-height: 1.875rem;
+	margin-bottom: 1.25rem;
 	margin-top: 0px;
 }
 
 .support .support-title,
 .support .support-description {
-	padding: 0px 14px;
+	padding: 0px 0.875rem;
 }
 
 @media (min-width: 576px) {
@@ -42,14 +42,14 @@
 	}
 
 	.support .support-image {
-		border-top-left-radius: 8px;
-		border-top-right-radius: 8px;
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
 	}
 }
 
 @media (min-width: 768px) {
 	.support-row {
-		grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(24.5625rem, 1fr));
 	}
 
 	.support .support-title,

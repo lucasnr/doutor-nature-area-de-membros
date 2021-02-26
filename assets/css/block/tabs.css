@@ -11,9 +11,9 @@
 	align-items: center;
 	color: #809fb8;
 	display: flex;
-	font-size: 14px;
-	height: 49px;
-	padding: 0px 15px;
+	font-size: 0.875rem;
+	height: 3.0625rem;
+	padding: 0px 0.9375rem;
 	white-space: nowrap;
 }
 
@@ -24,7 +24,7 @@
 
 .tabs .badge {
 	display: none;
-	margin-left: 14px;
+	margin-left: 0.875rem;
 }
 
 .tabs .active .badge {
@@ -32,9 +32,9 @@
 }
 
 .tabs .tab-icon {
-	height: 16px;
-	margin-right: 4px;
-	width: 16px;
+	height: 1rem;
+	margin-right: 0.25rem;
+	width: 1rem;
 }
 
 .tabs li + li {
@@ -44,7 +44,7 @@
 .tabs .indicator {
 	bottom: 0px;
 	display: flex;
-	height: 4px;
+	height: 0.25rem;
 	justify-content: center;
 	position: absolute;
 	transition: left 0.3s ease, width 0.3s ease;
@@ -84,14 +84,14 @@
 
 @media (min-width: 768px) {
 	.tabs li a {
-		font-size: 20px;
-		height: 68px;
-		padding: 0px 35px;
+		font-size: 1.25rem;
+		height: 4.25rem;
+		padding: 0px 2.1875rem;
 	}
 
 	.tabs .tab-icon {
-		height: 24px;
-		margin-right: 8px;
-		width: 24px;
+		height: 1.5rem;
+		margin-right: 0.5rem;
+		width: 1.5rem;
 	}
 }
