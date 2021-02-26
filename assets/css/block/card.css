@@ -18,7 +18,8 @@
 }
 
 .card .icon {
-	transform: scale(0.8375);
+	min-height: 45px;
+	min-width: 45px;
 }
 
 .card .card-title {

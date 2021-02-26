@@ -1,5 +1,7 @@
 (() => {
-	const links = document.querySelectorAll(".sidebar .sidebar-item-dropdown a");
+	const links = document.querySelectorAll(
+		".sidebar .sidebar-item-dropdown > a"
+	);
 	links.forEach((link) => {
 		link.onclick = (event) => {
 			event.preventDefault();

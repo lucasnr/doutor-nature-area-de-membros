@@ -101,3 +101,11 @@ main {
 .input:focus::placeholder {
 	color: var(--color-primary);
 }
+
+.bg-primary {
+	background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+	background-color: var(--bg-secondary);
+}

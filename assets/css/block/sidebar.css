@@ -36,8 +36,14 @@ main {
 	height: 100%;
 	max-width: var(--sidebar-width);
 	min-width: var(--sidebar-width);
+	overflow-y: scroll;
 	transform: translateX(calc(var(--sidebar-width) * -1));
 	transition: transform 0.3s ease;
+}
+
+.sidebar .sidebar-navbar::-webkit-scrollbar {
+	background: transparent; /* Optional: just make scrollbar invisible */
+	width: 0; /* Remove scrollbar space */
 }
 
 .sidebar-active .sidebar {
@@ -140,15 +146,6 @@ main {
 	width: 100%;
 }
 
-.sidebar .sidebar-badge {
-	background-color: #99b2c6;
-	border-radius: 14px;
-	font-size: 14px;
-	font-weight: 500;
-	margin: 0px auto;
-	padding: 5px 8px;
-}
-
 .sidebar .sidebar-item-dropdown .sidebar-item-dropdown-toggler {
 	height: 26px;
 	transition: transform 0.3s ease;
@@ -185,11 +182,11 @@ main {
 .sidebar .sidebar-dropdown {
 	max-height: 0px;
 	overflow: hidden;
-	transition: max-height 0.3s ease;
+	transition: max-height 0.5s ease-in-out;
 }
 
 .sidebar .sidebar-item-dropdown.active .sidebar-dropdown {
-	max-height: 20vh;
+	max-height: 100vh;
 }
 
 .sidebar .sidebar-dropdown a {
@@ -201,7 +198,7 @@ main {
 	border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.sidebar .sidebar-dropdown a.active,
+.sidebar .sidebar-dropdown .sidebar-dropdown-item.active a,
 .sidebar .sidebar-dropdown a:hover,
 .sidebar .sidebar-dropdown .sidebar-dropdown-item.owns a:focus {
 	background-color: var(--bg-dropdown-primary);
@@ -257,10 +254,6 @@ main {
 	.sidebar ul li a {
 		font-size: 18px;
 		min-height: 60px;
-	}
-
-	.sidebar .sidebar-badge {
-		font-size: 16px;
 	}
 
 	.sidebar .sidebar-item-dropdown .sidebar-item-dropdown-toggler {

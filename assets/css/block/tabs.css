@@ -1,0 +1,97 @@
+.tabs {
+	position: relative;
+}
+
+.tabs,
+.tabs li {
+	display: inline-flex;
+}
+
+.tabs li a {
+	align-items: center;
+	color: #809fb8;
+	display: flex;
+	font-size: 14px;
+	height: 49px;
+	padding: 0px 15px;
+	white-space: nowrap;
+}
+
+.tabs .active a {
+	color: var(--color-primary);
+	font-weight: 700;
+}
+
+.tabs .badge {
+	display: none;
+	margin-left: 14px;
+}
+
+.tabs .active .badge {
+	background-color: var(--color-primary);
+}
+
+.tabs .tab-icon {
+	height: 16px;
+	margin-right: 4px;
+	width: 16px;
+}
+
+.tabs li + li {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabs .indicator {
+	bottom: 0px;
+	display: flex;
+	height: 4px;
+	justify-content: center;
+	position: absolute;
+	transition: left 0.3s ease, width 0.3s ease;
+}
+
+.tabs .indicator::after {
+	background-color: var(--color-primary);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 65%;
+}
+
+.tab-content > * {
+	max-height: 0px;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.3s linear;
+}
+
+.tab-content > .active {
+	max-height: none;
+	overflow: visible;
+	opacity: 1;
+}
+
+.tab-content > *:not(.active) {
+	padding: 0px;
+	margin: 0px;
+}
+
+@media (min-width: 576px) {
+	.tabs .badge {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.tabs li a {
+		font-size: 20px;
+		height: 68px;
+		padding: 0px 35px;
+	}
+
+	.tabs .tab-icon {
+		height: 24px;
+		margin-right: 8px;
+		width: 24px;
+	}
+}
