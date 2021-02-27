@@ -223,6 +223,10 @@ main {
 	margin-right: 0.625rem;
 }
 
+.sidebar-active {
+	overflow: hidden;
+}
+
 @media (min-width: 576px) {
 	body {
 		height: 100vh;
